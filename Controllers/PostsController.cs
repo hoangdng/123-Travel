@@ -71,8 +71,8 @@ namespace SemanticWeb.Controllers
                 SparqlResultSet rset = (SparqlResultSet)results;
                 foreach (SparqlResult r in rset)
                 {
-                    var postId = r.ElementAt(0).Value.ToString();
-                    var post = await _context.Posts.Where(p => p.Title == postId).FirstOrDefaultAsync();
+                    var postTitle = r.ElementAt(0).Value.ToString();
+                    var post = await _context.Posts.Where(p => p.Title == postTitle).FirstOrDefaultAsync();
                     postsByTheme.Add(post);
                 }
             }
@@ -101,6 +101,7 @@ namespace SemanticWeb.Controllers
             }
             else if (searchString == "")
             {
+                queryString.Namespaces.AddNamespace("has", new Uri("https://localhost:44331/Posts/"));
                 queryString.CommandText = "SELECT ?post where {?theme has:Details ?post} ";
             }
 
@@ -116,10 +117,19 @@ namespace SemanticWeb.Controllers
                 SparqlResultSet rset = (SparqlResultSet)results;
                 foreach (SparqlResult r in rset)
                 {
-                    int lastSlash = r.ToString().LastIndexOf('/');
-                    string area = r.ToString().Substring(lastSlash + 1).ToLower();
-                    var posts = await _context.Posts.Where(p => p.Area.Name == area).ToListAsync();
-                    list.AddRange(posts);
+                    if (searchString == "")
+                    {
+                        var postTitle = r.ElementAt(0).Value.ToString();
+                        var post = await _context.Posts.Where(p => p.Title == postTitle).FirstOrDefaultAsync();
+                        list.Add(post);
+                    }
+                    else
+                    {
+                        int lastSlash = r.ToString().LastIndexOf('/');
+                        string area = r.ToString().Substring(lastSlash + 1).ToLower();
+                        var posts = await _context.Posts.Where(p => p.Area.Name == area).ToListAsync();
+                        list.AddRange(posts);
+                    }
                 }
             }
 

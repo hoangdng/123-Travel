@@ -42,6 +42,7 @@ $("#searchRDF-form").on('submit', function (event) {
         data: form,
         success: function (data) {
             $('#post-by-theme').html(data);
+            $('#textboxRDF').val('');
         }
     });
 });
