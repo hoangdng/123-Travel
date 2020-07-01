@@ -1,0 +1,114 @@
+﻿
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<SemanticWeb.Data.CustomUser> UserManager
+@inject SignInManager<SemanticWeb.Data.CustomUser> SignInManager
+@model SemanticWeb.ViewModels.CommentViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+<div class="row mt-5 mx-5">
+    <div class="col-6 shadow">
+        <img src="~/Images/@Model.Post.ImageURL" alt="Picture" class="img-fluid" />
+    </div>
+    <div class="col-6 mt-2 px-5">
+        <h2 style="font-family: 'Pangolin', cursive;">@Model.Post.Title</h2>
+        <p>
+            @Model.Post.Content
+        </p>
+        <div class="row">
+            <div class="col-6">
+                <h6>
+                    Ngày đăng:
+                    <span class="font-weight-normal"> @Model.Post.DatePosted.ToString("dd/MM/yyyy")</span>
+                </h6>
+                <h6>
+                    Địa điểm:
+                    @switch (Model.Post.AreaId)
+                    {
+                        case 1:
+                            <span class="font-weight-normal">
+                                Hải Châu
+                            </span>
+                            break;
+                        case 2:
+                            <span class="font-weight-normal">
+                                Thanh Khê
+                            </span>
+                            break;
+                        case 3:
+                            <span class="font-weight-normal">
+                                Sơn Trà
+                            </span>
+                            break;
+                        case 4:
+                            <span class="font-weight-normal">
+                                Liên Chiểu
+                            </span>
+                            break;
+                        case 5:
+                            <span class="font-weight-normal">
+                                Cẩm Lệ
+                            </span>
+                            break;
+                        case 6:
+                            <span class="font-weight-normal">
+                                Hòa Vang
+                            </span>
+                            break;
+                        default:
+                            <span class="font-weight-normal">
+                                Ngũ Hành Sơn
+                            </span>
+                            break;
+                    }
+                </h6>
+                <h6>
+                    Người đăng:
+                    <span class="font-weight-normal">
+                        <a asp-action="Details" asp-route-id="@Model.Post.UserID" asp-controller="Users">
+                            @UserManager.FindByIdAsync(Model.Post.UserID).Result.UserName
+                        </a>
+                    </span>
+
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="row mt-5 mx-5">
+        <div class="col-6">
+            <h4>Bình luận</h4>
+            <form method="post" action="/Posts/AddComment" id="form-comment">
+                <textarea @*class="form-element"*@ name="comment" cols="80" rows="3" id="textarea-comment"> </textarea>
+                <br />
+                <input @*class="form-element"*@ value=@User.Identity.Name name="userId" type="hidden" />
+                <input type="hidden" value=@Model.Post.Id name="postId" />
+                <button type="submit" class="btn btn-info float-right w-25">Đăng</button>
+            </form>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row mt-5 mx-5">
+        <div class="col-6">
+            <h4>Bình luận</h4>
+            <h6 class="font-italic font-weight-normal">(Bạn cần <span><a asp-area="Identity" asp-page="/Account/Login">đăng nhập</a></span> để đăng bình luận)</h6>
+        </div>
+    </div>
+}
+
+<div class="mt-5 col-6 mx-5" id="comments-box">
+    <partial name="CommentPartial" />
+</div>

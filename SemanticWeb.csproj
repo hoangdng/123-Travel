@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-PetWeb-0262FF1D-0841-4D2C-AA8C-6E98155BD157</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200625083448_ChangeAreaCTOR.cs" />
+    <Compile Remove="Migrations\20200625083448_ChangeAreaCTOR.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Posts\ViewHistory.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Posts\ViewHistory.cshtml" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="dotNetRDF" Version="2.5.1" />
+    <PackageReference Include="dotNetRDF.Data.Virtuoso" Version="2.5.1" />
+    <PackageReference Include="dotNetRDF.Query.FullText" Version="2.5.1" />
+    <PackageReference Include="MailKit" Version="2.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="MimeKit" Version="2.8.0" />
+    <PackageReference Include="SendGrid" Version="9.15.1" />
+    <PackageReference Include="toastr" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>

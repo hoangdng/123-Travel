@@ -1,0 +1,87 @@
+﻿
+@model IEnumerable<SemanticWeb.Models.Post>
+
+@{
+    ViewData["Title"] = "ViewHistory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row mx-5 my-5 d-flex justify-content-center">
+    <h1 style="font-family: 'Pangolin', cursive;">Các bài đã đăng</h1>
+
+    <table class="table mt-3 table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DatePosted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AreaId)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a>
+                    </td>
+                    <td>
+                        <img src="~/Images/@item.ImageURL" class="rounded-circle zoom-img" width="40" height="40" asp-append-version="true" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DatePosted)
+                    </td>
+                    <td>
+                        @switch (item.AreaId)
+                        {
+                            case 1:
+                                <span class="font-weight-normal">
+                                    Hải Châu
+                                </span>
+                                break;
+                            case 2:
+                                <span class="font-weight-normal">
+                                    Thanh Khê
+                                </span>
+                                break;
+                            case 3:
+                                <span class="font-weight-normal">
+                                    Sơn Trà
+                                </span>
+                                break;
+                            case 4:
+                                <span class="font-weight-normal">
+                                    Liên Chiểu
+                                </span>
+                                break;
+                            case 5:
+                                <span class="font-weight-normal">
+                                    Cẩm Lệ
+                                </span>
+                                break;
+                            default:
+                                <span class="font-weight-normal">
+                                    Hòa Vang
+                                </span>
+                                break;
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Chỉnh sửa</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

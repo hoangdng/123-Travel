@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*slide show at the beginning*@
+<div id="myCarousel" class="carousel slide shadow-lg" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active" id="firstSlide">
+            <img class="d-block w-100" src="~/images/carousel/first-slide.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item" id="secondSlide">
+            <div>
+                <p>
+                    Hai mươi năm về sau bạn sẽ hối hận về những gì bạn không làm hơn là những gì bạn làm.
+                    Vậy nên hãy tháo dây, nhổ neo ra khỏi bến đỗ an toàn. Hãy để cánh buồn của bạn đón trọn lấy gió.
+                    Thám hiểm. Mơ mộng. Khám phá. – <strong>Mark Twain</strong>
+                </p>
+                <a href="#home">
+                    Lên đường thôi
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <img class="d-block w-100" src="~/images/carousel/third-slide.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item" id="thirdSlide">
+            <div>
+                <p>
+                    Chúng ta sống trong một thế giới tuyệt vời đầy rẫy những vẻ đẹp, quyến rũ và phiêu lưu.
+                    Những chuyến phiêu lưu sẽ là bất tận, chỉ cần chúng ta tìm nó với đôi mắt luôn rộng mở - <strong>Jawaharial Nehru</strong>
+                </p>
+                <a asp-area="" asp-controller="Posts" asp-action="Theme">
+                    Tìm hiểu các chủ đề
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <img class="d-block w-100" src="~/images/carousel/second-slide.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item" id="fourthSlide">
+            <div>
+                <p>
+                    Một khi bạn đã đi, cuộc hành trình sẽ không bao giờ kết thúc.
+                    Nó sẽ tái hiện liên tục trong những góc yên tĩnh nhất của tâm trí bạn.
+                    Tâm hồn bạn sẽ không bao giờ dứt ra khỏi cuộc hành trình. – <strong>Pat Conroy</strong>
+                </p>
+                <a asp-area="" asp-controller="Home" asp-action="Contact">
+                    Về chúng tôi
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <img class="d-block w-100" src="~/images/carousel/fourth-slide.jpg" alt="Fourth slide">
+        </div>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon w-50 h-50" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+@*about us*@
+<div class="row px-5 py-5 shadow">
+    <div class="col-9 mt-5 pl-5">
+        <h3>123travel team:</h3>
+        <p id="quote">
+            "Một cuộc hành trình thực sự được tính không phải bằng dặm, mà là bằng những người đồng hành cùng với ta. 
+            Hãy để 123Travel giúp bạn!"
+        </p>
+        <a class="btn btn-warning text-white btn-lg" asp-controller="Home" asp-action="About">Về chúng tôi</a>
+    </div>
+    <div class="text-center col-3">
+        <img src="~/images/icons/logo.png" class="img-fluid" />
+    </div>
+</div>
+
+@*main content*@
+<div class="text-center mt-5" id="home">
+    <h1 class="display-1 text-center mb-5" style="font-family: 'Pangolin', cursive;">Địa điểm du lịch dành cho bạn</h1>
+</div>
+
+
+
+<div class="row">
+    <div class="col-3 filter pl-5">
+        <partial name="FilterPartial" />
+
+        <h4 class="mt-4 mb-2" style="font-family: 'Pangolin'">Đăng ký nhận thông tin:</h4>
+        <form class="d-flex justify-content-between form-inline row" name="sub_form" method="post" asp-action="Subscribe" asp-controller="Home" onsubmit="return validateForm()" required>
+            <input type="text" name="sub_email" placeholder="Nhập email của bạn..." />
+            <input class="btn btn-warning text-light" type="submit" value="Subscribe" OnClick="Subcribe_Click" />
+        </form>
+    </div>
+    <div class="col-9" id="newsfeed">
+        <partial name="NewsFeedPartial" />
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var x = document.forms["sub_form"]["sub_email"].value;
+        if (x == "" || x == null) {
+            alert("Vui lòng nhập email");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+<style>
+
+
+    .carousel-item {
+        height: 650px;
+    }
+</style>

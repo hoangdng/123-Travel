@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+  <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+  <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=tinhyeu">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Cầu tình yêu Đà Nẵng – Nơi hẹn ước tình yêu vĩnh cửu </ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Quán Le petit Café Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Quán Cafe Nia ở Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Quán cafe SIX ON SIX Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khám phá nét đẹp biển Mỹ Khê</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=maohiem">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Du lịch Đà Nẵng tham gia 3 trò chơi mạo hiểm</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Du lịch mạo hiểm leo núi Ngũ Hành Sơn</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Flyboard - trải nghiệm cảm giác bay trên không</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Mô Tô Nước – Trò Chơi Thể Thao Biển Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Cano Kéo Phao Trượt Nước – Trò Chơi Thể Thao Biển Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Lặn Biển Ngắm San Hô – Trò Chơi Thể Thao Biển Đà Nẵng</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=nghiduong">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khu nghỉ dưỡng InterContinental Đà Nẵng Sun Peninsula</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Biệt thự The Ocean</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">VINPEARL ĐÀ NẴNG RESORT và VILLAS</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=thethao">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Du lịch Đà Nẵng tham gia 3 trò chơi mạo hiểm</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Cano Kéo Phao Trượt Nước – Trò Chơi Thể Thao Biển Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Flyboard - trải nghiệm cảm giác bay trên không</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Lặn Biển Ngắm San Hô – Trò Chơi Thể Thao Biển Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Mô Tô Nước – Trò Chơi Thể Thao Biển Đà Nẵng</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=hiendai">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Nhà đảo ngược Đà Nẵng – Điểm check in “ảo tung chảo”</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Biệt thự The Ocean</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">VINPEARL ĐÀ NẴNG RESORT và VILLAS</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Cầu Rồng - biểu tượng của thành phố Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khu nghỉ dưỡng InterContinental Đà Nẵng Sun Peninsula</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Flyboard - trải nghiệm cảm giác bay trên không</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=giadinh">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khám phá nét đẹp biển Mỹ Khê</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Biệt thự The Ocean</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Lá phổi xanh bán đảo Sơn Trà</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">VINPEARL ĐÀ NẴNG RESORT và VILLAS</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Cầu Rồng - biểu tượng của thành phố Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khu nghỉ dưỡng InterContinental Đà Nẵng Sun Peninsula</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=banbe">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khám phá nét đẹp biển Mỹ Khê</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Biệt thự The Ocean</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Lá phổi xanh bán đảo Sơn Trà</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=amthuc">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Mỳ quảng Đà Nẵng – Món ăn ngon Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Bánh tráng thịt heo – Món ăn ngon Đà Nẵng</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Cơm gà – Món ăn ngon Đà Nẵng</ns0:Details>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/Posts/PostsByTheme?theme=thiennhien">
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Khám phá tất cả bán đảo Sơn Trà</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Đỉnh Bàn Cờ – Ông Tiên</ns0:Details>
+    <ns0:Details xmlns:ns0="https://localhost:44331/Posts/">Ngọn Hải Đăng – Mắt thần Đông Dương</ns0:Details>
+  </rdf:Description>
+<rdf:Description rdf:about="https://localhost:44331/HaiChau">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">beach</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/HaiChau">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">biển</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/SonTra">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">beach</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/SonTra">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">biển</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/SonTra">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">mountain</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/SonTra">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">núi</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/ThanhKhe">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">beach</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/ThanhKhe">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">biển</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/LienChieu">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">beach</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/LienChieu">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">biển</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/LienChieu">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">mountain</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/LienChieu">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">núi</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/CamLe">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">mountain</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/CamLe">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">núi</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/HoaVang">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">mountain</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/HoaVang">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">núi</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/NguHanhSon">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">beach</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/HoaVang">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">biển</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/NguHanhSon">
+    <ns0:Near xml:lang="en" xmlns:ns0="https://localhost:44331/">mountain</ns0:Near>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://localhost:44331/NguHanhSon">
+    <ns0:Near xml:lang="vn" xmlns:ns0="https://localhost:44331/">núi</ns0:Near>
+  </rdf:Description>
+</rdf:RDF>

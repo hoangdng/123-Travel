@@ -1,0 +1,149 @@
+#myCarousel li {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.carousel-item {
+    position: relative;
+    color: white;
+}
+
+#firstSlide > div {
+    position: absolute;
+    width: 40%;
+    margin: 200px 0 0 50px;
+}
+
+    #firstSlide > div > h1 {
+        font-size: 3em;
+    }
+
+    #firstSlide > div > p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    #firstSlide > div > a {
+        padding: 20px;
+        border-radius: 50px;
+        background-color: #35BCEB;
+        text-decoration: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+        #firstSlide > div > a:hover > i {
+            transform: translateX(5px);
+            transition: all 0.5s;
+        }
+
+
+#thirdSlide > div {
+    position: absolute;
+    width: 30%;
+    margin: 100px 0 0 800px;
+}
+
+    #thirdSlide > div > h1 {
+        font-size: 3em;
+        color: white;
+    }
+
+    #thirdSlide > div > p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        color: white;
+        font-weight: 500;
+    }
+
+    #thirdSlide > div > a {
+        padding: 20px;
+        border-radius: 50px;
+        background-color: #35BCEB;
+        text-decoration: none;
+        color: white;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+        #thirdSlide > div > a:hover > i {
+            transform: translateX(5px);
+            transition: all 0.5s;
+        }
+
+#secondSlide > div {
+    position: absolute;
+    width: 35%;
+    margin: 50px 0 0 50px;
+}
+
+    #secondSlide > div > h1 {
+        font-size: 3em;
+        color: whitesmoke;
+    }
+
+    #secondSlide > div > p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        color: whitesmoke;
+        font-weight: 500;
+    }
+
+    #secondSlide > div > a {
+        padding: 20px;
+        border-radius: 50px;
+        background-color: white;
+        text-decoration: none;
+        color: #35BCEB;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+        #secondSlide > div > a:hover > i {
+            transform: translateX(5px);
+            transition: all 0.5s;
+        }
+
+#fourthSlide > div {
+    position: absolute;
+    width: 50%;
+    margin: 50px 0 0 60px;
+}
+
+    #fourthSlide > div > h1 {
+        font-size: 3em;
+        color: whitesmoke;
+    }
+
+    #fourthSlide > div > p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        color: whitesmoke;
+        font-weight: 500;
+    }
+
+    #fourthSlide > div > a {
+        padding: 20px;
+        border-radius: 50px;
+        background-color: white;
+        text-decoration: none;
+        color: #35BCEB;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+        #fourthSlide > div > a:hover > i {
+            transform: translateX(5px);
+            transition: all 0.5s;
+        }
+
+#quote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #aaaaaa;
+}

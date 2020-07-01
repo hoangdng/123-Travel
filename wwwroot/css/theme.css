@@ -1,0 +1,72 @@
+﻿.area-row-block {
+    height: 200px;
+    margin: 0 100px;
+}
+
+.area-block {
+    border: 2px solid white;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+    .area-block h1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    .area-block:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        z-index: 1;
+        text-decoration: none
+    }
+
+.area-block-tinhyeu {
+    background-color: rgba(242,48,48,1);
+    background-image: url("../images/thumbnail/tinh-yeu.jpg");
+}
+
+.area-block-maohiem {
+    background-color: rgba(255,121,25,1);
+    background-image: url("../images/thumbnail/mao-hiem.jpg");
+}
+
+.area-block-nghiduong {
+    background-color: rgba(230,215,57,1);
+    background-image: url("../images/thumbnail/nghi-duong.png");
+}
+
+.area-block-thethao {
+    background-color: rgba(15,192,197,1);
+    background-image: url("../images/thumbnail/the-thao.jpg");
+}
+
+.area-block-hiendai {
+    background-color: rgba(116,217,65,1);
+    background-image: url("../images/thumbnail/hien-dai.jpg");
+}
+
+.area-block-giadinh {
+    background-color: rgba(230,103,230,1);
+    background-image: url("../images/thumbnail/gia-dinh.jpg");
+}
+
+.area-block-banbe {
+    background-color: rgba(242,48,48,1);
+    background-image: url("../images/thumbnail/ban-be.jpg");
+}
+
+
+.area-block-amthuc {
+    background-color: rgba(255,121,25,1);
+    background-image: url("../images/thumbnail/am-thuc.jpg");
+}
+
+.area-block-thiennhien {
+    background-color: rgba(230,215,57,1);
+    background-image: url("../images/thumbnail/thien-nhien.jpg");
+}
+

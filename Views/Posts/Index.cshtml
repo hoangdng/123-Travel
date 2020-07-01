@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SemanticWeb.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row mx-5 my-5 d-flex justify-content-center">
+    <h1 style="font-family: 'Pangolin', cursive;">Tất cả bài đăng</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DatePosted)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Area)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageURL)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DatePosted)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Area.Description)
+                    </td>
+                    <td>
+                        <img src="~/Images/@item.ImageURL" class="rounded-circle zoom-img" width="40" height="40" asp-append-version="true" />
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.Id" style="color:red;" class="font-weight-bold">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
