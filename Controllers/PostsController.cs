@@ -63,7 +63,7 @@ namespace SemanticWeb.Controllers
             SparqlQuery query = parser.ParseFromString(queryString);
 
             IGraph g = new Graph();
-            FileLoader.Load(g, "C:\\Users\\nguye\\Desktop\\123-Travel-master\\Data\\danang.rdf");
+            FileLoader.Load(g, "D:\\ThucHanh\\Web\\123Travel\\123-Travel\\Data\\danang.rdf");
 
             Object results = g.ExecuteQuery(query);
             if (results is SparqlResultSet)
@@ -108,7 +108,7 @@ namespace SemanticWeb.Controllers
             SparqlQueryParser parser = new SparqlQueryParser();
             SparqlQuery query = parser.ParseFromString(queryString);
             IGraph g = new Graph();
-            FileLoader.Load(g, "C:\\Users\\nguye\\Desktop\\123-Travel-master\\Data\\danang.rdf");
+            FileLoader.Load(g, "D:\\ThucHanh\\Web\\123Travel\\123-Travel\\Data\\danang.rdf");
 
             Object results = g.ExecuteQuery(query);
             if (results is SparqlResultSet)
